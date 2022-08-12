@@ -47686,13 +47686,13 @@ Webflow.require('ix2').init({
 					"config": {
 						"delay": 0,
 						"easing": "",
-						"duration": 8000,
+						"duration": 20000,
 						"target": {
 							"useEventTarget": "CHILDREN",
 							"selector": ".images-contain",
 							"selectorGuids": ["aef737fa-884e-e594-6551-e08a4bc12e38"]
 						},
-						"xValue": -100,
+						"xValue": -137.5,
 						"xUnit": "%",
 						"yUnit": "PX",
 						"zUnit": "PX"
@@ -47712,7 +47712,7 @@ Webflow.require('ix2').init({
 							"selectorGuids": ["aef737fa-884e-e594-6551-e08a4bc12e38"]
 						},
 						"xValue": 0,
-						"xUnit": "px",
+						"xUnit": "%",
 						"yUnit": "PX",
 						"zUnit": "PX"
 					}
