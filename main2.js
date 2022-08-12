@@ -47686,7 +47686,7 @@ Webflow.require('ix2').init({
 					"config": {
 						"delay": 0,
 						"easing": "",
-						"duration": 20000,
+						"duration": 8000,
 						"target": {
 							"useEventTarget": "CHILDREN",
 							"selector": ".images-contain",

@@ -16479,8 +16479,8 @@ blockquote {
 	flex: 0 0 auto;
 	border: 0px none #000;
 	border-radius: 16px;
-	-o-object-fit: contain;
-	object-fit: contain;
+	/* -o-object-fit: contain;
+	object-fit: contain; */
 }
 
 .overview-h3-heading {
