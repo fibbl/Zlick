@@ -60,8 +60,8 @@
       <div class="section pd-top-100px bg-neutral-200 wf-section" style="padding-bottom:0px">
         <div class="container-default w-container">
           <div data-w-id="59e80d46-a4c1-baa6-23d8-dc68ef1bbb2e" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="grid-2-columns mg-bottom-56px _2-col-mbl">
-            <h2 id="w-node-_6f7163e3-8a4b-f140-4fbf-b44c62386ca6-35d7824b" class="mg-bottom-0">Room gallery</h2>
-            <a href="https://rentaltemplate.webflow.io/product/single-rustic-cabin#product-title" id="w-node-_0498c8b1-b785-e5ed-b580-f868b66b0e96-35d7824b" class="btn-primary w-button">Book room</a>
+            <h2 id="w-node-_6f7163e3-8a4b-f140-4fbf-b44c62386ca6-35d7824b" class="mg-bottom-0">Pro mid</h2>
+            
           </div>
           <div class="grid-4-columns">
             <a href="https://rentaltemplate.webflow.io/product/single-rustic-cabin#" data-w-id="56401ca6-1592-59f0-f283-cb748486ce71" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="border-radius-24px overflow-hidden w-inline-block w-lightbox" aria-label="open lightbox" aria-haspopup="dialog">
@@ -194,46 +194,46 @@
             <div id="w-node-_9c526fa1-8a75-8a85-1914-057c36a9d7b3-35d7824b" data-w-id="9c526fa1-8a75-8a85-1914-057c36a9d7b3" style="margin-top: 0px; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="card product-page---add-to-cart">
               <h2 class="heading-h3-size mg-bottom-4px">Reservate room</h2>
               <p class="mg-bottom-24px">Lorem ipsum dolor sit amet consectetur adipiscing elit etiam cras tellus sit.</p>
-              <div class="text-200 medium mg-bottom-4px">From</div>
+              <div class="text-200 medium mg-bottom-4px">Total</div>
               <div class="flex align-center">
-                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="display-4">$&nbsp;99.00&nbsp;USD</div>
-                <div class="text-200 medium color-neutral-500">&nbsp;/night</div>
+                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="display-4">Rs 12999</div>
+                <!-- <div class="text-200 medium color-neutral-500">&nbsp;/night</div> -->
               </div>
               <div class="divider _32px---42px"></div>
+              
               <div>
-                <form data-node-type="commerce-add-to-cart-form" data-commerce-sku-id="61fab42c32a9006abdc60326" data-loading-text="Adding to cart..." data-commerce-product-id="61fab42cf904df5c5fc03a77" class="w-commerce-commerceaddtocartform mg-bottom-0">
+                <form action="/book" data-node-type="commerce-add-to-cart-form" data-commerce-sku-id="61fab42c32a9006abdc60326" data-loading-text="Adding to cart..." data-commerce-product-id="61fab42cf904df5c5fc03a77" class="w-commerce-commerceaddtocartform mg-bottom-0" id="book_form">
+                  <label for="shoot_date">Date</label>
+  <input type="date" id="shoot_date" name="birthday" style="border: none;" class="input dropdown-input-wrapper" required>
                   <div class="mg-bottom-16px mg-bottom-16px-mbp">
-                    <div class="flex vertical-mbp">
+                    <div class="flex vertical-mbp" style="padding-top: 20px;">
                       <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_sku_values_3dr%22%2C%22to%22%3A%22optionValues%22%7D%5D" data-commerce-product-sku-values="%7B%223455573309e40dc5d36a2a401f3c8578%22%3A%22340c9f8d4db69f5f0237a2d9103e8a27%22%7D" data-node-type="commerce-add-to-cart-option-list" data-commerce-product-id="61fab42cf904df5c5fc03a77" data-preselect-default-variant="false" class="mg-right-24px mg-bottom-16px-mbp" role="group">
+                        
                         <div role="group">
-                          <label>Location</label>
+                          
+                          <label>Time</label>
                           <div class="input dropdown-input-wrapper">
-                            <select id="option-set-3455573309e40dc5d36a2a401f3c857" data-node-type="commerce-add-to-cart-option-select" data-commerce-option-set-id="3455573309e40dc5d36a2a401f3c8578" class="input dropdown w-select" required="">
-                              <option selected="" value="">Select location</option>
-                              <option value="340c9f8d4db69f5f0237a2d9103e8a27">Revelstoke Mountain</option>
-                              <option value="f665f65c9f4abec358ee17d12dea17dd">Umatilla National Forest</option>
-                              <option value="50186b531144ae0086b30db1b5624b6d">Cleveland National Forest</option>
+                            <select form="book_form" id="option-set-3455573309e40dc5d36a2a401f3c857" data-node-type="commerce-add-to-cart-option-select" data-commerce-option-set-id="3455573309e40dc5d36a2a401f3c8578" class="input dropdown w-select" required="" >
+                              <option selected="" value="">Time</option>
+                              <option value="340c9f8d4db69f5f0237a2d9103e8a27">6:00 A.M</option>
+                              <option value="f665f65c9f4abec358ee17d12dea17dd">10:00 A.M</option>
+                              <option value="50186b531144ae0086b30db1b5624b6d">2:00 P.M</option>
+                              <option value="50186b531144ae0086b30db1b5624b6da">4:00 P.M</option>
                             </select>
                           </div>
                         </div>
                       </div>
                       <div>
-                        <label for="quantity-362cc4def1354923187c1fbcc2c019da">Nights</label>
-                        <input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-362cc4def1354923187c1fbcc2c019da" name="commerce-add-to-cart-quantity-input" min="1" class="w-commerce-commerceaddtocartquantityinput input number" value="1">
+                        <label for="quantity-362cc4def1354923187c1fbcc2c019da">People</label>
+                        <input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-362cc4def1354923187c1fbcc2c019da" name="commerce-add-to-cart-quantity-input" min="1" class="w-commerce-commerceaddtocartquantityinput input number" value="2">
                       </div>
+                      
                     </div>
+                    
                   </div>
                   <a data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" class="w-commerce-commercebuynowbutton btn-primary buy-now w-dyn-hide" href="https://rentaltemplate.webflow.io/checkout">Buy now</a>
-                  <input type="submit" data-node-type="commerce-add-to-cart-button" data-loading-text="Adding to cart..." value="Add to Cart" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton btn-secondary add-to-cart">
-                  <div class="flex-horizontal mg-bottom-32px">
-                    <div class="divider word-left"></div>
-                    <div class="text-uppercase">or</div>
-                    <div class="divider word-right"></div>
-                  </div>
-                  <a href="https://www.airbnb.com/" target="_blank" class="btn-primary dark w-inline-block">
-                    <img src="./Single Rustic Cabin - Rental X - Webflow Ecommerce website template_files/620154671d531d99d434a1a2_airbnb-logo-white-small-rental-webflow-ecommerce-template.svg" loading="eager" alt="" class="mg-right-10px">
-                    <div>Book on Airbnb</div>
-                  </a>
+                  <input type="submit" data-node-type="commerce-add-to-cart-button" data-loading-text="Adding to cart..." value="Pay" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton btn-secondary add-to-cart">
+                  
                 </form>
                 <div style="display:none" class="w-commerce-commerceaddtocartoutofstock empty-state">
                   <div>This product is out of stock.</div>
